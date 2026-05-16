@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Book Tickets | Whelnett Wedfest 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+  <style>
+    html,body{height:100%;margin:0;font-family:'Montserrat',sans-serif;background:#fff;color:#111; overflow-x: hidden;}
+    /* Page sections */
+    .top-section{background:#748ec4;color:#fff;padding:60px 20px;text-align:center}
+    .top-section h1{font-family:Impact,sans-serif;text-transform:uppercase;font-size:48px;margin:0 0 18px;letter-spacing:4px}
+    .top-section p{font-size:18px;margin:12px 0;max-width:900px;margin-left:auto;margin-right:auto}
+
+    .middle-section{background:#B5CB9E;color:#fff;padding:60px 40px;text-align:center}
+    .middle-section h1{font-family:Impact,sans-serif;text-transform:uppercase;font-size:36px;margin-bottom:14px;letter-spacing:4px}
+    .middle-section h2{font-size:25px;margin:8px 0 12px}
+    .middle-section h3{font-size:20px;margin:8px 0 10px;text-align:left}
+    .middle-section p{font-size:18px;margin:10px 0;text-align:left;max-width:900px;margin-left:auto;margin-right:auto}
+
+    .price-list{list-style:none;padding-left:0;margin:10px auto 0;max-width:900px;text-align:left;color:#fff}
+    .price-list li{margin:6px 0;display:block}
+
+    .bell-gallery{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;padding:0;margin-top:18px;max-width:900px;margin-left:auto;margin-right:auto}
+    .bell-item{flex:1 1 30%;max-width:30%;box-sizing:border-box}
+    .bell-item img{width:100%;height:auto;display:block;border-radius:8px;object-fit:cover;box-shadow:0 6px 18px rgba(0,0,0,.12);border:4px solid rgba(255,255,255,.18)}
+
+    .bottom-section{background:#fcdb92;padding:80px 20px 120px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}
+    .logo{max-width:300px;height:auto;margin-bottom:32px}
+    .cta-button{background:#30997a;border-radius:40px;font-family:Impact,sans-serif;letter-spacing:2px;text-decoration:none;color:#fff;padding:16px 28px;display:inline-block;border:4px solid transparent;box-shadow:0 0 12px rgba(255,182,193,.5);transition:all .35s ease}
+    .cta-button:hover{transform:translateY(-2px)}
+
+    footer{background:#30997a;text-align:center;padding:20px 10px;color:#fff}
+    footer img{width:60px;height:auto;display:inline-block}
+    .attribution a{color:#fff;text-decoration:underline;font-size:0.9rem}
+		
+		/* tiny attribution matching footer background */
+		footer .attribution {
+			font-size: 10px;
+			color: #30997a;        /* same as footer background */
+			margin-top: 6px;
+			line-height: 1;
+			display: block;
+		}
+
+		footer .attribution a {
+			color: #30997a;        /* same as footer background */
+			text-decoration: none;
+		}
+
+    @media (max-width:900px){.middle-section{padding-left:40px;padding-right:40px}.bell-item{flex:1 1 45%;max-width:45%}}
+    @media (max-width:540px){.bell-item{flex:1 1 100%;max-width:100%}.top-section h1{font-size:32px}}
+		
+		/* Ensure headings align to the same horizontal gutter as section content */
+		.top-section, .middle-section, .bottom-section { box-sizing: border-box; }
+		
+		/* Ensure h3s align with the section content (same max-width + centering) */
+		.middle-section h3,
+		.top-section h3,
+		.bottom-section h3 {
+			box-sizing: border-box;
+			max-width: 900px;        /* same constraint used for your paragraphs */
+			margin: 8px auto 10px;   /* vertical spacing preserved; horizontally centered */
+			padding: 0;              /* remove any extra inline padding that pushed it out */
+			text-align: left;        /* keep left-aligned text */
+			width: auto;             /* allow the centered max-width behaviour */
+		}
+
+		/* If you use different max-widths at other breakpoints, mirror them here */
+		@media (max-width: 900px) {
+			.middle-section h3,
+			.top-section h3,
+			.bottom-section h3 { max-width: calc(100% - 80px); /* allow for section padding: 40px each side */ }
+		}
+
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <a href="https://hannahwh05.github.io/whelnettwedfest/" aria-label="Home">
+      <img src="whelnettwedfestlogo.png" alt="Whelnett Wedfest Logo">
+    </a>
+  </div>
+
+  <!-- Desktop inline nav -->
+  <nav class="desktop-nav" aria-label="Primary navigation" role="navigation">
+    <ul>
+      <li><a href="https://hannahwh05.github.io/whelnettwedfest/ticket-info.html">Ticket Info</a></li>
+      <li><a href="https://hannahwh05.github.io/whelnettwedfest/festival-info.html">Festival Info/FAQs</a></li>
+      <li><a href="https://hannahwh05.github.io/whelnettwedfest/coming-soon.html">Lineup</a></li>
+      <li><a href="https://hannahwh05.github.io/whelnettwedfest/location.html">Location</a></li>
+      <li><a href="https://hannahwh05.github.io/whelnettwedfest/coming-soon.html">Site Map</a></li>
+      <li><a href="https://hannahwh05.github.io/whelnettwedfest/presents.html">Presents</a></li>
+    </ul>
+  </nav>
+
+  <!-- Mobile toggle using confetti burst SVG; icon inside small translucent box only -->
+  <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu" title="Menu">
+    <span class="icon-box" aria-hidden="true">
+      <svg class="confetti-svg" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+        <g fill="none" stroke-linecap="round" stroke-width="1.6">
+          <path class="burst-piece" d="M16 5 L16 11" stroke="#ffd700" style="--tx:0; --ty:-18px; --r: -18deg;" />
+          <path class="burst-piece" d="M16 21 L16 27" stroke="#ff69b4" style="--tx:0; --ty:18px; --r: 22deg;" />
+          <path class="burst-piece" d="M5 16 L11 16" stroke="#30997a" style="--tx:-18px; --ty:0; --r: -8deg;" />
+          <path class="burst-piece" d="M21 16 L27 16" stroke="#748ec4" style="--tx:18px; --ty:0; --r: 10deg;" />
+          <circle class="burst-piece" cx="10" cy="8" r="1.6" fill="#ff4500" style="--tx:-8px; --ty:-12px; --r: 6deg;" />
+          <circle class="burst-piece" cx="22" cy="8" r="1.6" fill="#e1007b" style="--tx:8px; --ty:-12px; --r: -6deg;" />
+          <circle class="burst-piece" cx="8" cy="24" r="1.6" fill="#00bfff" style="--tx:-10px; --ty:14px; --r: 12deg;" />
+          <circle class="burst-piece" cx="24" cy="24" r="1.6" fill="#ffd700" style="--tx:10px; --ty:14px; --r: -12deg;" />
+        </g>
+      </svg>
+    </span>
+    <span class="menu-label">Menu</span>
+  </button>
+
+  <div class="header-right">
+    <a href="https://www.instagram.com/whelnettwedfest/#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+    </a>
+  </div>
+
+  <div class="bunting-curve" aria-hidden="true">
+    <div class="flag"></div><div class="flag"></div><div class="flag"></div><div class="flag"></div>
+    <div class="flag"></div><div class="flag"></div><div class="flag"></div><div class="flag"></div>
+    <div class="flag"></div><div class="flag"></div><div class="flag"></div><div class="flag"></div>
+  </div>
+</header>
+
+<!-- Backdrop -->
+<div id="nav-backdrop" aria-hidden="true"></div>
+
+<main>
+  <section class="top-section">
+
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeClj1mf9Jp8sARHjbVVBG61GI-YVRYgiLwQta274X1JalDTA/viewform?embedded=true" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+
+
+
+</main>
+
+<footer>
+  <p>Whelnett Wedfest Ltd.</p>
+  <img src="whelnettwedfestlogo.png" alt="Whelnett Wedfest Logo">
+  <p class="attribution"><a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Grow studio - Flaticon</a></p>
+</footer>
+
+</body>
+</html>
+
+<!-- Overlay nav (mobile) trimmed to content and centered within viewport -->
+<nav id="main-nav" class="overlay" aria-label="Primary navigation overlay" role="navigation">
+  <div class="nav-wrap" role="group" aria-label="Navigation links">
+    <ul>
+      <li><a href="https://hannahwh05.github.io/whelnettwedfest/ticket-info.html">Ticket Info</a></li>
+      <li><a href="https://hannahwh05.github.io/whelnettwedfest/festival-info.html">Festival Info/FAQs</a></li>
+      <li><a href="https://hannahwh05.github.io/whelnettwedfest/coming-soon.html">Lineup</a></li>
+      <li><a href="https://hannahwh05.github.io/whelnettwedfest/location.html">Location</a></li>
+      <li><a href="https://hannahwh05.github.io/whelnettwedfest/coming-soon.html">Site Map</a></li>
+      <li><a href="https://hannahwh05.github.io/whelnettwedfest/presents.html">Presents</a></li>
+    </ul>
+  </div>
+</nav>
