@@ -67,10 +67,9 @@
 </head>
 <body>
   <h1>You are now in the queue!</h1>
-  <p>You are in the queue for the <strong>Whelnett Wedfest 2026</strong> ticket registration. When it is your turn, you will have until <strong>Friday 28th November 2025</strong> to enter the website and reserve your ticket.</p>
-  <p>You will then be asked what ticket you would like: <em>Day, Camping or Glamping</em>, as well as your dietary requirements, and if you are trying to book tickets for any children or dogs.</p>
+  <p>You are in the queue for the <strong>Whelnett Wedfest 2026</strong> ticket booking. When it is your turn, you will have until <strong>Monday 15th June 2026</strong> to enter the website and book your ticket.</p>
 
-  <div id="countdown">Ticket registration opens in 30 seconds</div>
+  <div id="countdown">Ticket booking opens in 30 seconds</div>
 
   <div class="loading-container">
     <div class="loading-bar" id="loadingBar">0%</div>
@@ -90,8 +89,7 @@
       if (progress >= 100) {
         progress = 100;
         clearInterval(timer);
-        //window.location.href = "https://whelnettwedfest.my.canva.site/#registration-form";
-        window.location.href = "https://hannahwh05.github.io/whelnettwedfest/ticket-registration.html";
+        window.location.href = "https://hannahwh05.github.io/whelnettwedfest/book-tickets.html";
       }
       bar.style.width = progress + "%";
       bar.textContent = Math.floor(progress) + "%";
@@ -99,7 +97,7 @@
       // Update countdown every second
       if (progress % (step * 10) < step) {
         timeLeft--;
-        countdown.textContent = `Ticket registration opens in ${timeLeft} seconds`;
+        countdown.textContent = `Ticket booking opens in ${timeLeft} seconds`;
       }
     }, interval);
   </script>
