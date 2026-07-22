@@ -103,6 +103,12 @@
     }
 
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+		
+	@media (max-width:900px){
+      .middle-section{padding-left:40px;padding-right:40px}
+      .illustrative-map{flex:1 1 45%;max-width:45%}
+      .pledge-list{max-width: calc(100% - 80px);}
+    }
   </style>
 </head>
 <body>
@@ -121,7 +127,7 @@
         <li><a href="festival-info.html">Festival Info/FAQs</a></li>
         <li><a href="coming-soon.html">Lineup</a></li>
         <li><a href="location.html">Location</a></li>
-        <li><a href="coming-soon.html">Site Map</a></li>
+        <li><a href="site-map.html">Site Map</a></li>
         <li><a href="presents.html">Presents</a></li>
       </ul>
     </nav>
@@ -174,7 +180,7 @@
 
   <main class="hero" role="main">
     <div class="card" aria-live="polite">
-			<img src="Illustrative Map.png" class="img-fluid" alt="Illustrative Map by Photini Knoyle">  
+			<img src="Illustrative Map.png" class="illustrative-map" alt="Illustrative Map by Photini Knoyle">  
     </div>
   </main>
 
