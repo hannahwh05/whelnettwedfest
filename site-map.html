@@ -172,10 +172,9 @@
     </div>
   </nav>
 
-  <!-- Hero / Coming soon -->
   <main class="hero" role="main">
     <div class="card" aria-live="polite">
-    <img src="Illustrative Map.png" alt="Illustrative Map by Photini Knoyle">  
+			<img src="Illustrative Map.png" class="img-fluid" alt="Illustrative Map by Photini Knoyle">  
     </div>
   </main>
 
@@ -231,53 +230,6 @@
           setOpen(false);
         }
       });
-
-      document.addEventListener('keydown', function(e){
-        if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true'){
-          setOpen(false);
-          toggle.focus();
-        }
-      });
-
-      function updateNavDisplay(){
-        if (window.matchMedia('(max-width:768px)').matches){
-          if (desktopNav) desktopNav.style.display = 'none';
-        } else {
-          if (desktopNav) desktopNav.style.display = '';
-          setOpen(false);
-        }
-      }
-      updateNavDisplay();
-      window.addEventListener('resize', updateNavDisplay);
-    })();
-
-    /* Countdown example (adjust targetDate as needed) */
-		(function(){
-      // Note: Months are 0-indexed in JavaScript, so August is 7 (0 = Jan, 7 = Aug)
-      var targetDate = new Date(2026, 7, 8, 13, 0, 0); 
-      
-      function updateCountdown(){
-        var now = new Date().getTime();
-        var distance = targetDate.getTime() - now;
-        if (distance <= 0){
-          document.getElementById('cd-days').textContent = '0';
-          document.getElementById('cd-hours').textContent = '0';
-          document.getElementById('cd-mins').textContent = '0';
-          document.getElementById('cd-secs').textContent = '0';
-          return;
-        }
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var secs = Math.floor((distance % (1000 * 60)) / 1000);
-        document.getElementById('cd-days').textContent = days;
-        document.getElementById('cd-hours').textContent = hours;
-        document.getElementById('cd-mins').textContent = mins;
-        document.getElementById('cd-secs').textContent = secs;
-      }
-      updateCountdown();
-      setInterval(updateCountdown,1000);
-    })();
   </script>
 </body>
 </html>
