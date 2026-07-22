@@ -104,12 +104,21 @@
 
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
 		
-		.fullscreen {
-			width: 100%
-			height: 100vh;
-			padding: 10vh;
-		}
-		
+		/* Responsive Image Wrapper and Styling */
+	.map-container {
+		width: 100%;
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-top: 2px;
+	}
+
+	.responsive-map {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+
   </style>
 </head>
 <body>
@@ -179,10 +188,13 @@
     </div>
   </nav>
 
-  <main class="fullscreen"; role="main">
-    <div  aria-live="polite">
-			<img src="Illustrative Map.png" alt="Illustrative Map by Photini Knoyle">  
+	<main>
+  <div class="card">   
+    <div class="map-container">
+      <img src="Illustrative Map.png" alt="Whelnett Wedfest Illustrative Site Map" class="responsive-map">
     </div>
+  </div>
+
   </main>
 
   <!-- Footer -->
