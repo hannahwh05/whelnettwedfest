@@ -250,7 +250,18 @@
         if (e.target.tagName.toLowerCase() === 'a' && window.matchMedia('(max-width:768px)').matches){
           setOpen(false);
         }
-      });
+      })
+			      function updateNavDisplay(){
+        if (window.matchMedia('(max-width:768px)').matches){
+          if (desktopNav) desktopNav.style.display = 'none';
+        } else {
+          if (desktopNav) desktopNav.style.display = '';
+          setOpen(false);
+        }
+      }
+      updateNavDisplay();
+      window.addEventListener('resize', updateNavDisplay);
+			})();
   </script>
 </body>
 </html>
