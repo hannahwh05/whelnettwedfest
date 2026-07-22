@@ -59,7 +59,7 @@
 
     /* ---------- Main content (flexes) ---------- */
     main{flex:1;display:flex;align-items:center;justify-content:center;padding:48px 18px;box-sizing:border-box}
-    .card{background:rgba(255,255,255,0.95);padding:36px 28px;border-radius:14px;max-width:780px;width:100%;box-shadow:0 8px 28px rgba(0,0,0,0.12);text-align:center}
+    .card{background:rgba(255,255,255,0.95);padding:20px 20px;border-radius:10px;max-width:1800px;width:100%;box-shadow:0 8px 28px rgba(0,0,0,0.12);text-align:center}
 
     /* Make the festival name pink again (reverted) */
     .brand-title {
@@ -103,6 +103,20 @@
     }
 
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+		
+	.map-container {
+		width: 100%;
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-top: 2px;
+	}
+
+	.responsive-map {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
   </style>
 </head>
 <body>
@@ -205,10 +219,12 @@
     </div>
   </main>
 
-	<main class="hero" role="main">
-		<div>
-		<img src="Lineup.png" alt="Lineup Poster">
-		<p> Bride and groom illustration by Photini Knoyle<p>
+	<main>
+		<div class="card">
+			<div class="map-container">
+				<img src="Lineup.png" alt="Lineup Poster">
+			</div>
+			<p> Bride and groom illustration by Photini Knoyle</p>
 		</div>
 	</main>
 
